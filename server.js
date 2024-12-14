@@ -145,7 +145,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:5000'] }));
+app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:5000', 'https://backend-cpu9.onrender.com'] }));
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
